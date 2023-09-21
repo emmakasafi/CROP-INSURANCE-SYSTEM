@@ -1,5 +1,8 @@
 import React, { Component, useState } from 'react';
 
+import { Form,Row } from 'react-bootstrap';
+
+
 function MyForm() {
   const [gender, setGender] = useState("");
 
@@ -8,14 +11,21 @@ function MyForm() {
   }
 
   return (
-    <div>
-      <div className='d-flex align-items-center bg-secondary'>
+    <div className=' justify-content-center d-flex align-items-center bg-secondary'>
+      <div className=' bg-white p-3'>
         <form>
-          <label htmlFor="firstname"></label>
-          <input type='text' className='form-control' placeholder='first name'></input>
-
+          
+            <div>
+            <Form.Label htmlFor="firstname"></Form.Label>
+           <Form.Control className='form-control' placeholder='first name'></Form.Control>
+          </div>
+          
           <label htmlFor="secondname"></label>
           <input type='text' className='form-control' placeholder='second name'></input>
+
+          
+          
+          
 
           <label htmlFor="surname"></label>
           <input type='text' className='form-control' placeholder='surname'></input>
